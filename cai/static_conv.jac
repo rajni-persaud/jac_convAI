@@ -28,3 +28,7 @@ graph basic_gph {
     }
 
 }
+
+// walker init {
+//     spawn here --> graph::basic_gph;
+// }
