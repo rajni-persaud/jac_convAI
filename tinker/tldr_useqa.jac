@@ -1,7 +1,13 @@
 walker init {
     can use.enc_question, use.enc_answer;
 
-    answers = ['I am 20 years old', 'My dog is hungry', 'My TV is broken'];
+    answers = [
+        'I am 20 years old', 
+        'My dog is hungry', 
+        'My TV is broken',
+        'Eldon is a good teacher',
+        'Jason is only ok at teaching'
+    ];
     question = "If I wanted to fix something what should I fix?";
 
     q_enc = use.enc_question(question);
