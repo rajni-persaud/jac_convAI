@@ -1,11 +1,4 @@
-node apple{
-    has a, b="goodbye";
-}
-
-edge banana{
-    has c="hello";
-}
-
+import {*} with './assets.jac';
 walker init{
     root{
         spawn here --> node::apple;
