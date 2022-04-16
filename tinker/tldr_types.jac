@@ -10,4 +10,20 @@ walker init {
                'string': d, 'list': e, 'dict': f};
     
     std.out(summary);
+
+    list_a = [1];
+    list_b = [2];
+    list_c = [];
+    list_d = [];
+    list_c.list::append(list_a);
+    list_c.list::append(list_b);
+
+    for i in list_a: list_d.list::append(i);
+    for i in list_b: list_d.list::append(i);
+
+    std.out('list_a', list_a);
+    std.out('list_b', list_b);
+    std.out('list_c', list_c);
+    std.out('list_d', list_d);
+
 }
