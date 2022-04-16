@@ -8,7 +8,9 @@ walker init {
         'Eldon is a good teacher',
         'Jason is only ok at teaching'
     ];
-    question = "If I wanted to fix something what should I fix?";
+    
+    // question = "If I wanted to fix something what should I fix?";
+    question = std.input(">");
 
     q_enc = use.enc_question(question);
     a_enc = use.enc_answer(answers); # can take lists or single strings
