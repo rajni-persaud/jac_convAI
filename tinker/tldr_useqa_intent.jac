@@ -7,7 +7,20 @@ walker init {
         'mobile app',
         'info system',
         'back',
-        'goodbye'
+        'goodbye',
+        'I dont understand'
+    ];
+
+    basic_intents = [
+        'yes',
+        'yeah',
+        'of course',
+        'absolutely',
+        "I'd like that",
+        'negative',
+        'no',
+        'not',
+        'back'
     ];
     
     while(true) {
@@ -16,7 +29,7 @@ walker init {
         question = std.input("> ");
 
         q_enc = use.enc_question(question);
-        a_enc = use.enc_answer(main_intents); # can take lists or single strings
+        a_enc = use.enc_answer(basic_intents); # can take lists or single strings
 
         a_scores=[];
 
@@ -32,7 +45,7 @@ walker init {
 
         max_index = a_scores.list::index(max_score);
 
-        std.out(main_intents[max_index]);
+        std.out(basic_intents[max_index]);
     }
 
     // report [a_scores, max_score, max_index];
