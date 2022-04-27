@@ -20,7 +20,9 @@ walker init {
         'negative',
         'no',
         'not',
-        'back'
+        'back',
+        'goodbye',
+        "I don't' understand"
     ];
     
     while(true) {

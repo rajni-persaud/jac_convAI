@@ -26,4 +26,26 @@ walker init {
     std.out('list_c', list_c);
     std.out('list_d', list_d);
 
+    a = [1, 2, 3, 4];
+    b = 1;
+    if (b in [1, 2]): std.out("Yes!!!!!!!!!!!");
+    for i in a {
+        // std.out(i);
+        if i == b {
+            std.out("T");
+        }
+        // if i == b: std.out("Yes!!!!!!!!!!");
+    }
+
+    my_str = 'YESs';
+    //t = my_str.str::lower();
+    //std.out(t);
+
+
+
+    //std.out(a.list::index(5) == -1);
+
+    t = my_str.str::lower;
+    std.out(t);
+
 }

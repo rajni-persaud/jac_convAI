@@ -8,7 +8,7 @@ edge weak;
 graph basic_gph {
     has anchor root;
     spawn {
-        root = spawn node::generic;
+        root = spawn node::person;
         person1 = spawn root -[strong]-> node::person(name="Joe");
         person2 = spawn root -[strong]-> node::person;
         person3 = spawn root -[weak]-> node::person;
@@ -23,5 +23,6 @@ graph basic_gph {
 walker init {
     spawn here --> graph::basic_gph;
     spawn here --> graph::basic_gph;
-    spawn here --> graph::basic_gph;
+    spawn -->[1] --> graph::basic_gph;
+    //spawn here --> graph::basic_gph;
 }
